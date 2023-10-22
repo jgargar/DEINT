@@ -1,0 +1,39 @@
+body {
+    background: grey;
+  }
+
+  div {
+    margin: 30px;
+    padding: 20px;
+    border-top: 5px solid green;
+    border-bottom: 5px dashed orange;
+  }
+  
+  #first {
+    width: 50%;
+    background-color: red;
+  }
+
+  #first img{
+    width: 40%;
+  }
+  
+  #second {
+    width: 300px;
+    background-color: blue;
+  }
+
+  #second img{
+    width: 300px;
+  }
+
+  p {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-indent: 100px;
+  }
+  
+  span {
+    text-decoration: underline;
+  }

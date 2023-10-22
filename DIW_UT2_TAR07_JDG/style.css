@@ -1,0 +1,26 @@
+.container{
+    align-self: start;
+    columns: 5;
+    height: auto;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.panel{
+    margin-top: 0px;
+    padding: 20px;
+    border-radius: 25px;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    align-items: end;
+    width: 80%;
+}
+
+.panel h3{
+    align-items: start;
+    align-items: flex-end;
+    margin-top: 550px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
