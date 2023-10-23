@@ -9,21 +9,21 @@ body {
     border-bottom: 5px dashed orange;
   }
   
-  #first {
+  #div1 {
     width: 50%;
     background-color: red;
   }
 
-  #first img{
+  #div1 img{
     width: 40%;
   }
   
-  #second {
+  #div2 {
     width: 300px;
     background-color: blue;
   }
 
-  #second img{
+  #div2 img{
     width: 300px;
   }
 
