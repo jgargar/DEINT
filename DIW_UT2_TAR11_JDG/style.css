@@ -1,0 +1,11 @@
+.encabezado{
+    text-align: center;
+}
+
+.cuerpo{
+    -webkit-mask-image: radial-gradient(circle, black 20%, rgba(0, 0, 0, 0.5) 30%);  
+}
+
+.cuerpo img{
+    width: 100%;
+}
