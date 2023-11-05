@@ -8,16 +8,16 @@
   }
   
   .container {
+    height: 800px;
+    width: 80%;
     background-color: lightgreen;
     border-radius: 10px;
     margin: 100px auto;
     position: relative;
-    height: 600px;
-    width: 80%;
   }
   
   .container nav {
-    background-color: #555555;
+    background-color: grey;
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
@@ -25,7 +25,7 @@
   }
   
   .container nav div {
-    color: #ffffff;
+    color: white;
     display: inline-block;
     padding: 20px;
     width: 20%;
@@ -48,43 +48,43 @@
     z-index: 20;
   }
   
-  #li1 {
-    left: 20%;
-    position: absolute;
+  #fig1 {
+    left: 25%;
     top: 25%;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+    position: absolute;
+    -webkit-transform: rotate(-40deg);
+    transform: rotate(-40deg);
     z-index: 10;
   }
   
-  #li2 {
-    left: 30%;
+  #fig2 {
+    left: 35%;
+    top: 35%;
     position: absolute;
-    top: 30%;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
+    -webkit-transform: rotate(50deg);
+    transform: rotate(50deg);
     z-index: 6;
   }
   
-  #li3 {
+  #fig3 {
     left: 40%;
-    position: absolute;
     top: 35%;
-    -webkit-transform: rotate(-15deg);
-    transform: rotate(-15deg);
+    position: absolute;
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
     z-index: 4;
   }
   
-  #li4 {
+  #fig4 {
     left: 50%;
-    position: absolute;
     top: 40%;
-    -webkit-transform: rotate(15deg);
-    transform: rotate(15deg);
+    position: absolute;
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
     z-index: 2;
   }
   
-  .fixed-sidebar {
+  .sidebar {
     border: 2px solid black;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -96,12 +96,12 @@
     width: 80px;
   }
   
-  .fixed-sidebar ul {
+  .sidebar ul {
     list-style: none;
     padding-left: 5px;
   }
   
-  .fixed-sidebar img {
-    margin: 5%;
+  .sidebar img {
+    margin: 10%;
     width: 90%;
   }
