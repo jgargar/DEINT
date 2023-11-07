@@ -1,10 +1,14 @@
+* {
+    box-sizing: border-box;
+}
 .container{
     font-family: "LATO";
 }
 
 .container header{
     height: 600px;
-    width: 60%;
+    width: 80%;
+    background-position: center;
     margin-right: auto;
     margin-left: auto;
     background-image: url("./img/portada.png")
@@ -13,16 +17,62 @@
 .container nav{
     top: 0px;
     z-index: 100;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
-.container nav div{
+.container nav a{
     color: white;
     display: inline-block;
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: bold;
     padding-top: 30px;
-    padding-right: 10px;
+    padding-right: 50px;
     padding-left: 10px;
 }
+
+.container nav a:hover{
+    cursor: pointer
+}
+
+.cabecera{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cabecera h1{
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+    margin-block-end: 0px;
+}
+
+.cabecera hr{
+    border: 1px solid #14a3f9;
+    width: 600px;
+}
+
+.cabecera p{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.cabecera button{
+    height: 40px;
+    width: 150px;
+    border: 1px solid #14a3f9;
+    background-color: transparent;
+    border-radius: 5px;
+    color: white;
+}
+.cabecera button:hover{
+    background-color: #14a3f9;
+    cursor: pointer
+}
+
+
 
 
 
