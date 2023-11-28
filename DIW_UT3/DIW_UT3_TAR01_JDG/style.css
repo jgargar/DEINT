@@ -1,7 +1,89 @@
-body{
-    display: inline;
+header, nav, .contenedor, .contenido, footer, h1, p{
+    margin: 10px 0;
 }
 
-@media screen and (max-width: 600px){
-    
+body{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header {
+    background-color: lightgreen;
+    text-align: center;
+}
+
+nav {
+    background-color: lightyellow;
+    float: left;
+    width: 200px;
+}
+
+nav select {
+    display: none;
+}
+
+nav ul {
+    padding-left: 10px;
+    list-style-type: none;
+}
+
+.contenedor {
+    margin-left: 220px;
+}
+
+.contenido {
+    background-color: lightblue;
+    color: white;
+    float: left;
+    width: 300px;
+    margin-left: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+footer {
+    background-color: lightgreen;
+    clear: both;
+}
+
+header, nav, #contenido, #contenido, footer {
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        text-align: left;
+    }
+
+    nav {
+        float: none;
+        width: auto;
+    }
+
+    nav select {
+        display: inline;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .contenedor {
+        margin-left: 0;
+    }
+
+    .contenido {
+        float: none;
+        width: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h2 {
+        display: none;
+    }
 }
