@@ -1,0 +1,30 @@
+h1{
+  transition: all 3s ease;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+div{
+  transition: all 3s ease;
+  width:150px;
+  height:150px;
+  position: absolute;
+  left: 45%;
+  background:green;
+}
+
+h1:hover{
+  color: red;
+  background-color: white;
+  text-align: center;
+}
+
+div:hover{
+  width:150px;
+  height:150px;
+  position: absolute;
+  left: 45%;
+  border-radius: 75px;
+  background:yellow;
+}
