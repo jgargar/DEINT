@@ -1,72 +1,125 @@
-.cuadrado{
-  animation: 10s infinite alternate movCuadrado;
-  width:50px;
-  height:50px;
-  position: absolute;
-  background:red;
+body {
+    display: flex;
+    justify-content: center;
 }
 
-.circulo{
-  width:175px;
-  height:175px;
-  border-radius: 50%;
-  position: absolute;
-  left: 45%;
-  top: 15%;
-  background:green;
+#mountain {
+    margin: 100px auto;
+    background: linear-gradient(rgb(137, 222, 255), rgb(255, 203, 251));
+    width: 300px;
+    height: 300px;
+    animation: mountain 10s linear infinite;
+
 }
 
-.circulo:hover{
-  animation: 
-    10s infinite alternate movCirculo;
+#mountain img {
+    position: relative;
+    z-index: 2;
+}
+
+#moon,
+#rays {
+    position: absolute;
+    left: 60%;
+    top: 37%;
+    z-index: 1;
+}
+
+#rays {
+    animation: rays 10s linear infinite;
+}
+
+#moon {
+    animation: moon 5s linear infinite 4s;
+} 
+
+@keyframes rays {
+
+    0%, 70%, 100% {
+        left: 35%;
+        top: 37%;
+        transform: rotate(30);
+    }
+
+    30%, 40%, 90% {
+        left: 48%;
+        top: 13%;
+        transform: rotate(30);
+    }
+
+    55%, 99% {
+        left: 60%;
+        top: 37%;
+        transform: rotate(20);
+
+    }
+
+
+
+}
+
+@keyframes moon {
+
+    0% {
+        left: 35%;
+        top: 37%;
+    }
+
+    50%, 70% {
+        left: 48%;
+        top: 13%;
+    }
+
+    100% {
+        left: 60%;
+        top: 37%;
+    }
 }
 
 
-@keyframes movCuadrado {
-  0% {
-    top: 0px;
-    left: 0px;
-  }
+/* animacion del color de fondo de la montaña */
+@keyframes mountain {
 
-  33%{
-    top: 90%;
-    left: 50%;
-  }
+    0%,
+    100% {
+        background: linear-gradient(rgb(137, 222, 255), rgb(255, 203, 251));
+    }
 
-  66%{
-    top: 50%;
-    left: 95%;
-  }
+    15% {
+        background: linear-gradient(rgb(113, 191, 255), rgb(67, 170, 255));
+    }
 
-  100% {
-    top: 0px;
-    left: 0px;
-  }
+    25% {
+        background: linear-gradient(rgb(35, 90, 136), rgb(16, 63, 102));
+    }
+
+    35% {
+        background: linear-gradient(rgb(14, 60, 99) 30%, rgb(255, 251, 3));
+    }
+
+    45% {
+        background: linear-gradient(rgb(11, 54, 88) 50%, rgb(255, 154, 3));
+    }
+
+    55% {
+        background: linear-gradient(rgb(2, 8, 14) 50%, rgb(255, 62, 3));
+    }
+
+    60% {
+        background: linear-gradient(rgb(2, 8, 14) 100%, rgb(255, 62, 3) 0%);
+    }
+
+    80% {
+        background: linear-gradient(rgb(0, 0, 0), rgb(133, 3, 255));
+    }
+
+    85% {
+        background: linear-gradient(rgb(133, 3, 255), #ff5ee4);
+    }
+
+    90% {
+        background: linear-gradient(rgb(151, 128, 252), #fa5eff);
+
+    }
+
 }
-
-@keyframes movCirculo {
-  from {
-    transform: scale(1);
-    background-color: blue;
-  }
-
-  25% {
-    background-color: red;
-  }
-  
-  50% {
-    transform: scale(0.5);
-    background-color: yellow;
-  }
-
-  75%{
-    background-color: red;
-  }
-
-  to {
-    transform: scale(1.5);
-    background-color: pink;
-  }
-}
-
-
